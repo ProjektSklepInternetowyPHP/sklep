@@ -1,7 +1,8 @@
 <?php
-$db = mysqli_connect("localhost", "root", "", "sklep_ogrodniczy");
+$db = mysqli_connect("localhost", "root", "", "sklep_roslinny");
 
-function execute_file($path){
+function execute_file($db, $path){
+
     $myfile = fopen($path, "r") or die("Unable to open file!");
     $filecontent = fread($myfile,filesize($path));
     fclose($myfile);
@@ -9,4 +10,6 @@ function execute_file($path){
     mysqli_multi_query($db, $filecontent);
 }
 
-execute_file("tables/users.sql");
+
+execute_file($db, "tables/users.sql");
+
