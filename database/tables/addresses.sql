@@ -1,0 +1,2 @@
+drop table if exists addresses;
+create table addresses (address_id int primary key auto_increment, country varchar(32) not null, city varchar(32) not null, street varchar(32) not null, street_num int not null, apartment_num int null, delivery_notes text null, user_id int not null);

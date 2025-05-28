@@ -1,0 +1,2 @@
+drop table if exists products;
+create table products (product_id int primary key auto_increment, category_id int not null, product_name varchar(32) not null, product_desc text null, price decimal(10, 2) not null, stock int not null);
