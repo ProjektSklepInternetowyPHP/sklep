@@ -12,4 +12,9 @@ function execute_file($db, $path){
 
 
 execute_file($db, "tables/users.sql");
+execute_file($db, "tables/orders.sql");
+execute_file($db, "tables/addresses.sql");
+execute_file($db, "tables/categories.sql");
+execute_file($db, "tables/products.sql");
+execute_file($db, "tables/order_contents.sql");
 
