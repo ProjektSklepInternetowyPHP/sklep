@@ -1,2 +1,2 @@
 drop table if exists users;
-create table users (user_id int primary key auto_increment, username varchar(32) not null, password text not null);
+create table users (user_id int primary key auto_increment, username varchar(32) not null, password text not null, First_Name varchar(32) not null, Last_Name varchar(32) not null, Phone varchar(12) not null, Email varchar(32) not null);
